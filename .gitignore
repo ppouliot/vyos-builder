@@ -3,6 +3,7 @@ vyos-build
 
 vyos-builder
 ppouliot.vyos_builder
+sample-config
 
 # Ansible (Deactivated)
 # -------
