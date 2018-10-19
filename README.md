@@ -4,6 +4,11 @@
 
 * [ppouliot.vyos-builder](https://github.com/ppouliot/vyos-builder/tree/ansible)
 
+## Puppet
+
+* [ppouliot-vyos_builder](https://github.com/ppouliot/vyos-builder/tree/puppet)
+
+
 
 ##  The Process
 1. Download [vyos-build](https://github.com/vyos/vyos-build)
