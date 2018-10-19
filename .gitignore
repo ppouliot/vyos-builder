@@ -1,12 +1,12 @@
 packages
 vyos-build
 
-# Ansible (Deactivated)
+# Ansible (Activated)
 # -------
-defaults
-handlers
-meta
-tasks
-vars
+#defaults
+#handlers
+#meta
+#tasks
+#vars
 
 # Puppet (deactivated)
