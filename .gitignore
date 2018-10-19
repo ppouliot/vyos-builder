@@ -1,0 +1,12 @@
+packages
+vyos-build
+
+# Ansible (Deactivated)
+# -------
+defaults
+handlers
+meta
+tasks
+vars
+
+# Puppet (deactivated)
