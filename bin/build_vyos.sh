@@ -5,4 +5,4 @@ rsync -av $HOME/packages/*.deb /usr/src/vyos/packages/
 cd /usr/src/vyos-build
 ./configure
 make iso
-copy /usr/src/vyos-build/build/*.iso $HOME/
+cp /usr/src/vyos-build/build/*.iso $HOME/
