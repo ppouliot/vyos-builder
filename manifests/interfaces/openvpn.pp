@@ -4,7 +4,7 @@ define vyatta::interfaces::openvpn (
   $openvpn = $name
 ) {
   concat::fragment { "interfaces_${openvpn}":
-    target  => "${vyatta::configuration_file}",
+    target  => "${vyatta::vyos_configuration_file}",
     content => template('vyatta/openvpn.erb'),
     order   => 201,
   }

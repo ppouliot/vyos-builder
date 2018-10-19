@@ -4,7 +4,7 @@ define vyatta::service::webproxy (
   $webproxy = $name,
 ) {
   concat::fragment { "webproxy_${webproxy}":
-    target  => "${vyatta::configuration_file}",
+    target  => "${vyatta::vyos_configuration_file}",
     content => template('vyatta/webproxy.erb'),
     order   => 403,
   }

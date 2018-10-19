@@ -4,7 +4,7 @@ define vyatta::protocols::bgp (
   $configuration,
 ) {
   concat::fragment { "bgp_${bgp}":
-    target  => "${vyatta::configuration_file}",
+    target  => "${vyatta::vyos_configuration_file}",
     content => template('vyatta/bgp.erb'),
     order   => 621,
   }

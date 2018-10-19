@@ -4,7 +4,7 @@ define vyatta::service::ssh (
   $ssh = $name,
 ) {
   concat::fragment { "ssh_${ssh}":
-    target  => "${vyatta::configuration_file}",
+    target  => "${vyatta::vyos_configuration_file}",
     content => template('vyatta/ssh.erb'),
     order   => 401,
   }

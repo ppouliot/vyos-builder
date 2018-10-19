@@ -4,7 +4,7 @@ define vyatta::system::system (
   $system = $name,
 ) {
   concat::fragment { "system_${system}":
-    target  => "${vyatta::configuration_file}",
+    target  => "${vyatta::vyos_configuration_file}",
     content => template('vyatta/system.erb'),
     order   => 502,
   }

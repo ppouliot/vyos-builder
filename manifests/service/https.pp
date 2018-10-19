@@ -4,7 +4,7 @@ define vyatta::service::https (
   $https = $name,
 ) {
   concat::fragment { "https_${https}":
-    target  => "${vyatta::configuration_file}",
+    target  => "${vyatta::vyos_configuration_file}",
     content => template('vyatta/https.erb'),
     order   => 401,
   }

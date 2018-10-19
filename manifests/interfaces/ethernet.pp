@@ -7,7 +7,7 @@ define vyatta::interfaces::ethernet (
   include vyatta
 
   concat::fragment { "interfaces_${ethernet}":
-    target  => "${vyatta::configuration_file}",
+    target  => "${vyatta::vyos_configuration_file}",
     content => template('vyatta/ethernet.erb'),
     order   => 201,
   }
