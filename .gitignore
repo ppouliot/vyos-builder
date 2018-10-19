@@ -13,3 +13,13 @@ tasks
 vars
 
 # Puppet (deactivated)
+CHANGELOG.md
+Gemfile
+Rakefile
+appveyor.yml
+metadata.json
+manifests:
+spec:
+default_facts.yml
+spec_helper.rb
+tasks
