@@ -1,10 +1,11 @@
+# define vyatta::system::ntp
 define vyatta::system::ntp (
-  $ensure = present,
   $configuration,
+  $ensure = present,
   $ntp = $name,
 ) {
   concat::fragment { "ntp_${server}":
-    target  => "${vyatta::configuration_file}",
+    target  => $vyatta::vyos_configuration_file,
     content => template('vyatta/ntp.erb'),
     order   => 506,
   }

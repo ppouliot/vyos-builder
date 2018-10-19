@@ -1,10 +1,11 @@
+# define vyatta::vpn::ipsec
 define vyatta::vpn::ipsec (
-  $ensure = present,
   $configuration,
+  $ensure = present,
   $ipsec = $name,
 ) {
   concat::fragment { "ipsec_${ipsec}":
-    target  => "${vyatta::vyos_configuration_file}",
+    target  => $vyatta::vyos_configuration_file,
     content => template('vyatta/ipsec.erb'),
     order   => 701,
   }
