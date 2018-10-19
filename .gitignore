@@ -1,6 +1,9 @@
 packages
 vyos-build
 
+vyos-builder
+ppouliot.vyos_builder
+
 # Ansible (Deactivated)
 # -------
 defaults
