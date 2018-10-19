@@ -1,4 +1,4 @@
-# vyos-build-builder - Build the build system for custom VyOS images
+# vyos-builder - An Ansible role to build custom VyOS images
 
 ##  The Process
 1. Download [vyos-build](https://github.com/vyos/vyos-build)
