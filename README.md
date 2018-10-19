@@ -1,1 +1,1 @@
-docs/PUPPET.md
+docs/PUPPET-VYATTA.md

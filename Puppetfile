@@ -9,5 +9,5 @@ mod 'puppetlabs/stdlib', :latest
 mod 'puppetlabs/vcsrepo', :latest
 mod 'puppet/archive', :latest
 mod 'puppet/vyos',
-    :git => 'https://github.com/ppouliot/puppet-vyos',
-    :branch => 'master'
+    :git => 'https://github.com/ppouliot/vyos-builder',
+    :branch => 'puppet'
