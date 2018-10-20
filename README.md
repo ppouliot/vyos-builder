@@ -1,4 +1,4 @@
-# vyos-builder - Consolidated things for VyOS managemt and custom images
+# vyos-builder - Consolidated things for VyOS management and custom images
 
 ## Ansible
 
